@@ -1,0 +1,7 @@
+Curso: CSS Grid - Simplificando layouts
+
+01. Definindo o layout base
+02. Criando o Layout da seção de destaque
+03. Estilizando a seção de populares
+04. Estilizando o cabeçalho, menu e rodapé
+05. Deixando o site responsivo
