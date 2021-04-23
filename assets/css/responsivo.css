@@ -12,6 +12,17 @@
         grid-column: none;
         grid-row: none;
     }
+
+    .populares__conteudo {
+        flex-direction: column;                 /*Deixa o conteúdo um embaixo do outro 'ocupando apenas a mesma coluna de uma grid'*/
+    }
+
+    .populares__card {
+        grid-template-rows: 150px auto;
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
 }
 
 /* TABLET's */
@@ -46,14 +57,29 @@
     .destaques__categorias {
         grid-column: 1 / 3;
     }
+
+    .populares__conteudo {
+        flex-direction: row;                 /*Deixa o conteúdo um embaixo do outro 'ocupando apenas a mesma coluna de uma grid'*/
+    }
+
+    .populares__card {
+        grid-template-rows: 173px auto;
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+    }
 }
 
 /* PC's ou NOTEBOOKS */
 @media screen and (min-width: 992px) {
-    
+    .populares__card {
+        width: calc(33.33% - 1rem);
+    }    
 }
 
 /* SMARTTV's */
 @media screen and (min-width: 1200px) {
-    
+    .populares__card {
+        width: calc(20% - 1rem);
+        margin-bottom: 0;
+    }  
 }
